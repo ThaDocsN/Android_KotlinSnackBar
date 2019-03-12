@@ -1,4 +1,4 @@
-class Snack(val id: Int, val name: String, var quantity: Int, var cost: Double, val vendingMachineID: Int) {
+class Snack(val id: Int, val name: String, private var quantity: Int, var cost: Double, val vendingMachineID: Int) {
 
     fun getQuantity() = "the quantity of $name is now $quantity"
 
