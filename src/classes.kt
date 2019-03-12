@@ -7,3 +7,10 @@ class Snack(val id: Int, val name: String, var quantity: Int, var cost: Double, 
         return "quantity is now $quantity"
     }
 }
+class VendingMachine(val id: Int, val name: String) {
+
+    fun printId() = "Machine id is $id"
+
+    fun printName() = "Machine name is $name"
+
+}
