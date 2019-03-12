@@ -14,3 +14,21 @@ class VendingMachine(val id: Int, val name: String) {
     fun printName() = "Machine name is $name"
 
 }
+
+class Customer(val id: Int, val name: String, var cash: Double) {
+
+    fun addCash(num: Double) {
+        cash += num
+
+    }
+
+    fun buySnacks(cost: Double) {
+        cash -= cost
+    }
+
+    fun saveName() =
+        "Name is $name"
+
+    var isBroke: Boolean = false
+        set(isBroke) { cash <= 0.0}
+}
