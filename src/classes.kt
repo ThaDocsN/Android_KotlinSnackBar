@@ -6,6 +6,12 @@ class Snack(val id: Int, val name: String, private var quantity: Int, var cost: 
         quantity += num
         return "quantity is now $quantity"
     }
+
+    fun buySnack(num: Int): Double {
+        quantity -= num
+        return cost.times(num)
+    }
+
 }
 class VendingMachine(val id: Int, val name: String) {
 
